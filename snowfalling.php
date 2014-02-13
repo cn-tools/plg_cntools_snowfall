@@ -5,7 +5,7 @@
  * @author      Clemens Neubauer {@link cn-tools@gmx.at#}
  * @version     0-0-1
  * @date        Created on 13-Feb-2014
- * @link        Project Site {@link http://#}
+ * @link        Project Site {@link https://github.com/cn-tools/plg_snowfall}
  *
  * @license GNU/GPL
  * This program is free software: you can redistribute it and/or modify
