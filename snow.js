@@ -36,7 +36,7 @@ function initsnow() {
 		crds[i] = 0;                      
     	lftrght[i] = Math.random()*15;         
     	x_mv[i] = 0.03 + Math.random()/10;
-		snow[i]=document.getElementById("s"+i);
+		snow[i]=document.getElementById("s"+i+snowaddid);
 		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)];
 		snow[i].size=randommaker(snowsizerange)+snowminsize;
 		snow[i].style.fontSize=snow[i].size;
@@ -73,6 +73,6 @@ function movesnow() {
 
 function writesnowbase(){
 	for (i=0;i<=snowmax;i++) {
-		document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"px;z-index:"+snowzindex+";'>"+snowletter+"</span>");
+		document.write("<span id='s"+i+snowaddid+"' style='position:absolute;top:-"+snowmaxsize+"px;z-index:"+snowzindex+";'>"+snowletter+"</span>");
 	}
 }

@@ -27,22 +27,6 @@ class plgContentSnowFalling extends JPlugin
 {
     public function onContentBeforeDisplay($context, &$row, &$params, $page = 0)
     {
-/*
-		$lWorkYear = date('Y');
-
-		$lStartMonth = $this->params->get('startmonth');
-		$lStartDay = $this->params->get('startday');
-		$lStartDate = $lWorkYear.$lStartMonth.$lStartDay;
-		
-		$lEndMonth = $this->params->get('endmonth');
-		$lEndDay = $this->params->get('endday');
-		
-		if ($lEndMonth << $lStartMonth){
-			$lWorkYear = $lWorkYear + 1;
-		}
-			
-		$lEndDate = $lWorkYear.$lEndMonth.$lEndDay;
-*/		
 		if (($this->params->get('snowmax'))
 		 && (intval($this->params->get('snowmax'))>0)
 		 && ($this->check_in_date_range($this->params->get('startmonth'), $this->params->get('startday'), $this->params->get('endmonth'), $this->params->get('endday')))){
@@ -54,6 +38,7 @@ class plgContentSnowFalling extends JPlugin
 			$script .= 'var snowminsize='.$this->params->get('snowminsize').'; ';
 			$script .= 'var snowmaxsize='.$this->params->get('snowmaxsize').'; ';
 			$script .= 'var snowingzone='.$this->params->get('snowingzone').'; ';
+			$script .= 'var snowaddid="'.uniqid('cnts',TRUE).$this->params->get('snowaddid').'"; ';
 			
 			if (($this->params->get('snowtextimage')=='2') && ($this->params->get('snowimage'))){
 				$script .= 'var snowletter=\'<img src="'.JURI::base().htmlspecialchars($this->params->get('snowimage')).'" />\'; ';

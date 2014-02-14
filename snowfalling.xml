@@ -150,6 +150,7 @@
 					<option value="3">PLG_CONTENT_SNOWFALLING_SNOWINGZONE_CENTER</option>
 					<option value="4">PLG_CONTENT_SNOWFALLING_SNOWINGZONE_RIGHT</option>
 				</field>
+				<field name="snowaddid" type="text" default="" size="10" label="PLG_CONTENT_SNOWFALLING_SNOWADDID" description="PLG_CONTENT_SNOWFALLING_SNOWADDID_DESC" />
 			</fieldset>
 
 		</fields>
