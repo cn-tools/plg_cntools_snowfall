@@ -68,8 +68,8 @@ class plgContentSnowFalling extends JPlugin
 	private function check_in_date_range($start_month, $start_day, $end_month, $end_day)
 	{
 		$lFlag = FALSE;
-		$lAktMonth = intval(date('m'));
-		$lAktDay = intval(date('d'));
+		$lCurrMonth = intval(date('m'));
+		$lCurrDay = intval(date('d'));
 		$lStartMonth = intval($start_month);
 		$lStartDay = intval($start_day);
 		$lEndMonth = intval($end_month);
@@ -78,17 +78,17 @@ class plgContentSnowFalling extends JPlugin
 		
 		if ($lEndMonth < $lStartMonth){
 			// over year
-			if ($lAktMonth > $lStartMonth) {
+			if ($lCurrMonth > $lStartMonth) {
 				$lFlag = TRUE;
-			} elseif (($lAktMonth == $lStartMonth) && ($lAktDay >= $lStartDay)) {
+			} elseif (($lCurrMonth == $lStartMonth) && ($lCurrDay >= $lStartDay)) {
 				$lFlag = TRUE;
-			} elseif ($lAktMonth < $lEndMonth) {
+			} elseif ($lCurrMonth < $lEndMonth) {
 				$lFlag = TRUE;
-			} elseif (($lAktMonth == $lEndMonth) && ($lAktDay <= $lEndDay)) {
+			} elseif (($lCurrMonth == $lEndMonth) && ($lCurrDay <= $lEndDay)) {
 				$lFlag = TRUE;
 			}
-		} elseif ((($lAktMonth > $lStartMonth) || (($lAktMonth == $lStartMonth) && ($lAktDay >= $lStartDay)))
-			&& (($lAktMonth < $lEndMonth) || (($lAktMonth == $lEndMonth) && ($lAktDay <= $lEndDay))))
+		} elseif ((($lCurrMonth > $lStartMonth) || (($lCurrMonth == $lStartMonth) && ($lCurrDay >= $lStartDay)))
+			&& (($lCurrMonth < $lEndMonth) || (($lCurrMonth == $lEndMonth) && ($lCurrDay <= $lEndDay))))
 		{
 			$lFlag = TRUE;
 		}
@@ -96,3 +96,4 @@ class plgContentSnowFalling extends JPlugin
 		return $lFlag;
 	}		
 }
+?>
