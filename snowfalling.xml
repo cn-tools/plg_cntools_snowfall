@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.0" type="plugin" group="content" method="upgrade">
+<extension version="3.0" type="plugin" group="system" method="upgrade">
 	<name>plg_snowfalling</name>
 	<author>CN-Tools</author>
 	<creationDate>Februar 2014</creationDate>
@@ -15,13 +15,18 @@
 		<filename>index.html</filename>
 	</files>
 
+	<updateservers>
+		<server type="collection" priority="1">https://raw.github.com/cn-tools/plg_snowfall/master/updatecollection.xml</server>
+		<server type="extension" priority="2" name="My Extension's Updates">https://raw.github.com/cn-tools/plg_snowfall/master/updateversion.xml</server>
+	</updateservers>
+
 	<languages>
-		<language tag="de-DE">languages/de-DE/de-DE.plg_content_snowfalling.ini</language>
-		<language tag="de-DE">languages/de-DE/de-DE.plg_content_snowfalling.sys.ini</language>
-		<language tag="en-GB">languages/en-GB/en-GB.plg_content_snowfalling.ini</language>
-		<language tag="en-GB">languages/en-GB/en-GB.plg_content_snowfalling.sys.ini</language>
-		<language tag="hr-HR">languages/hr-HR/hr-HR.plg_content_snowfalling.ini</language>
-		<language tag="hr-HR">languages/hr-HR/hr-HR.plg_content_snowfalling.sys.ini</language>
+		<language tag="de-DE">languages/de-DE/de-DE.plg_system_snowfalling.ini</language>
+		<language tag="de-DE">languages/de-DE/de-DE.plg_system_snowfalling.sys.ini</language>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_system_snowfalling.ini</language>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_system_snowfalling.sys.ini</language>
+		<language tag="hr-HR">languages/hr-HR/hr-HR.plg_system_snowfalling.ini</language>
+		<language tag="hr-HR">languages/hr-HR/hr-HR.plg_system_snowfalling.sys.ini</language>
 	</languages>
 
 	<config>
@@ -31,18 +36,18 @@
 				<field name="snowzindex" type="text" size="10" default="9999" label="PLG_CONTENT_SNOWFALLING_ZINDEX" description="PLG_CONTENT_SNOWFALLING_ZINDEX_DESC" />
 
 				<field name="startmonth" type="list" default="12" label="PLG_CONTENT_SNOWFALLING_STARTMONTH" description="PLG_CONTENT_SNOWFALLING_STARTMONTH_DESC">
-					<option value="01">PLG_CONTENT_SNOWFALLING_MONTH_JANUARY</option>
-					<option value="02">PLG_CONTENT_SNOWFALLING_MONTH_FEBRUARY</option>
-					<option value="03">PLG_CONTENT_SNOWFALLING_MONTH_MARCH</option>
-					<option value="04">PLG_CONTENT_SNOWFALLING_MONTH_APRIL</option>
-					<option value="05">PLG_CONTENT_SNOWFALLING_MONTH_MAY</option>
-					<option value="06">PLG_CONTENT_SNOWFALLING_MONTH_JUNE</option>
-					<option value="07">PLG_CONTENT_SNOWFALLING_MONTH_JULY</option>
-					<option value="08">PLG_CONTENT_SNOWFALLING_MONTH_AUGUST</option>
-					<option value="09">PLG_CONTENT_SNOWFALLING_MONTH_SEPTEMBER</option>
-					<option value="10">PLG_CONTENT_SNOWFALLING_MONTH_OCTOBER</option>
-					<option value="11">PLG_CONTENT_SNOWFALLING_MONTH_NOVEMBER</option>
-					<option value="12">PLG_CONTENT_SNOWFALLING_MONTH_DECEMBER</option>
+					<option value="01">JANUARY</option>
+					<option value="02">FEBRUARY</option>
+					<option value="03">MARCH</option>
+					<option value="04">APRIL</option>
+					<option value="05">MAY</option>
+					<option value="06">JUNE</option>
+					<option value="07">JULY</option>
+					<option value="08">AUGUST</option>
+					<option value="09">SEPTEMBER</option>
+					<option value="10">OCTOBER</option>
+					<option value="11">NOVEMBER</option>
+					<option value="12">DECEMBER</option>
 				</field>
 
 				<field name="startday" type="list" default="1" label="PLG_CONTENT_SNOWFALLING_STARTDAY" description="PLG_CONTENT_SNOWFALLING_STARTDAY_DESC">
@@ -82,18 +87,18 @@
 				<field name="basic_hidden1" type="hidden" default="" />
 
 				<field name="endmonth" type="list" default="1" label="PLG_CONTENT_SNOWFALLING_ENDMONTH" description="PLG_CONTENT_SNOWFALLING_ENDMONTH_DESC">
-					<option value="01">PLG_CONTENT_SNOWFALLING_MONTH_JANUARY</option>
-					<option value="02">PLG_CONTENT_SNOWFALLING_MONTH_FEBRUARY</option>
-					<option value="03">PLG_CONTENT_SNOWFALLING_MONTH_MARCH</option>
-					<option value="04">PLG_CONTENT_SNOWFALLING_MONTH_APRIL</option>
-					<option value="05">PLG_CONTENT_SNOWFALLING_MONTH_MAY</option>
-					<option value="06">PLG_CONTENT_SNOWFALLING_MONTH_JUNE</option>
-					<option value="07">PLG_CONTENT_SNOWFALLING_MONTH_JULY</option>
-					<option value="08">PLG_CONTENT_SNOWFALLING_MONTH_AUGUST</option>
-					<option value="09">PLG_CONTENT_SNOWFALLING_MONTH_SEPTEMBER</option>
-					<option value="10">PLG_CONTENT_SNOWFALLING_MONTH_OCTOBER</option>
-					<option value="11">PLG_CONTENT_SNOWFALLING_MONTH_NOVEMBER</option>
-					<option value="12">PLG_CONTENT_SNOWFALLING_MONTH_DECEMBER</option>
+					<option value="01">JANUARY</option>
+					<option value="02">FEBRUARY</option>
+					<option value="03">MARCH</option>
+					<option value="04">APRIL</option>
+					<option value="05">MAY</option>
+					<option value="06">JUNE</option>
+					<option value="07">JULY</option>
+					<option value="08">AUGUST</option>
+					<option value="09">SEPTEMBER</option>
+					<option value="10">OCTOBER</option>
+					<option value="11">NOVEMBER</option>
+					<option value="12">DECEMBER</option>
 				</field>
 				
 				<field name="endday" type="list" default="6" label="PLG_CONTENT_SNOWFALLING_ENDDAY" description="PLG_CONTENT_SNOWFALLING_ENDDAY_DESC">
@@ -130,6 +135,7 @@
 					<option value="31">31</option>
 				</field>
 
+				<field name="basic_hidden2" type="hidden" default="" />
 			</fieldset>
 
 			<fieldset name="extradata" label="PLG_CONTENT_SNOWFALLING_EXTRADATA_LABEL">
@@ -154,6 +160,7 @@
 					<option value="4">PLG_CONTENT_SNOWFALLING_SNOWINGZONE_RIGHT</option>
 				</field>
 				<field name="snowaddid" type="text" default="" size="10" label="PLG_CONTENT_SNOWFALLING_SNOWADDID" description="PLG_CONTENT_SNOWFALLING_SNOWADDID_DESC" />
+				<field name="extradata_hidden3" type="hidden" default="" />
 			</fieldset>
 
 		</fields>

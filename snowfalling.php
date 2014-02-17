@@ -23,10 +23,21 @@
  */
 defined('_JEXEC') or die('Restricted access');
 
-class plgContentSnowFalling extends JPlugin
+class plgSystemSnowFalling extends JPlugin
 {
-    public function onContentBeforeDisplay($context, &$row, &$params, $page = 0)
+	function plgSystemSnowFalling(&$subject, $config)
+	{
+		parent::__construct($subject, $config);
+	}
+
+	function onAfterRender()
     {
+		$app = JFactory::getApplication();
+		if($app->isAdmin() === true)
+		{
+			return;
+		}
+		
 		if (($this->params->get('snowmax'))
 		 && (intval($this->params->get('snowmax'))>0)
 		 && ($this->check_in_date_range($this->params->get('startmonth'), $this->params->get('startday'), $this->params->get('endmonth'), $this->params->get('endday')))){
@@ -60,9 +71,16 @@ class plgContentSnowFalling extends JPlugin
 
 			$script .= 'initsnow(); ';
 			
-			$document->addScriptDeclaration($script);
-	
-			$document->addScript('plugins/content/snowfalling/snow.js', 'text/javascript');
+			$buffer = JResponse::getBody();
+			$pos = strrpos($buffer, "</head>");
+			if($pos > 0)
+			{
+				$buffer = substr($buffer, 0, $pos).'<script src="'.JURI::base().'plugins/system/snowfalling/snow.js" type="text/javascript"></script>'.'<script type="text/javascript">'.$script.'</script>'.substr($buffer, $pos);
+			}		
+			
+			JResponse::setBody($buffer);
+			
+			return true;
 		};
 	}
 	private function check_in_date_range($start_month, $start_day, $end_month, $end_day)
