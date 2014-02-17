@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
+		<name>snow falling</name>
+		<description></description>
+		<element>snowfalling</element>
+		<type>plugin</type>
+		<version>0.0.2</version>
+		<folder>system</folder>
+		<infourl>https://github.com/cn-tools/plg_snowfall/</infourl>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/cn-tools/plg_snowfall/archive/master.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="3.[012345]"/>
+		<maintainer>CN-Tools</maintainer>
+		<maintainerurl>https://github.com/cn-tools/</maintainerurl>
 	</update>
 </updates>
