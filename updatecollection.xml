@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extensionset name="Updateing plug in 'snow falling'" description="">
-	<extension name="snowfalling" element="plg_snowfalling" type="file" version="3.[012345]" detailsurl="https://raw.github.com/cn-tools/plg_snowfall/master/updateversion.xml"/>
+<extensionset name="Updateing plug in snowfalling" description="">
+	<extension name="snowfalling" element="plg_snowfalling" type="plugin" version="0.0.2" detailsurl="https://raw.github.com/cn-tools/plg_snowfall/master/updateversion.xml"/>
 </extensionset>
