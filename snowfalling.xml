@@ -8,7 +8,7 @@
 	<copyright>Copyright (c) 2013-2014 Clemens Neubauer. All Rights Reserved</copyright>
     <license>http://www.gnu.org/licenses/gpl-3.0</license>
 	<version>0.0.1</version>
-	<description>PLG_CONTENT_SNOWFALLING_BASE_DESC</description>
+	<description>PLG_SNOWFALLING_BASE_DESC</description>
 	<files>
 		<filename plugin="snowfalling">snowfalling.php</filename>
 		<filename plugin="snowfalling">snow.js</filename>
@@ -32,10 +32,10 @@
 	<config>
 		<fields name="params">
 
-			<fieldset name="basic" label="PLG_CONTENT_SNOWFALLING_BAISC_LABEL">
-				<field name="snowzindex" type="text" size="10" default="9999" label="PLG_CONTENT_SNOWFALLING_ZINDEX" description="PLG_CONTENT_SNOWFALLING_ZINDEX_DESC" />
+			<fieldset name="basic" label="PLG_SNOWFALLING_BAISC_LABEL">
+				<field name="snowzindex" type="text" size="10" default="9999" label="PLG_SNOWFALLING_ZINDEX" description="PLG_SNOWFALLING_ZINDEX_DESC" />
 
-				<field name="startmonth" type="list" default="12" label="PLG_CONTENT_SNOWFALLING_STARTMONTH" description="PLG_CONTENT_SNOWFALLING_STARTMONTH_DESC">
+				<field name="startmonth" type="list" default="12" label="PLG_SNOWFALLING_STARTMONTH" description="PLG_SNOWFALLING_STARTMONTH_DESC">
 					<option value="01">JANUARY</option>
 					<option value="02">FEBRUARY</option>
 					<option value="03">MARCH</option>
@@ -50,7 +50,7 @@
 					<option value="12">DECEMBER</option>
 				</field>
 
-				<field name="startday" type="list" default="1" label="PLG_CONTENT_SNOWFALLING_STARTDAY" description="PLG_CONTENT_SNOWFALLING_STARTDAY_DESC">
+				<field name="startday" type="list" default="1" label="PLG_SNOWFALLING_STARTDAY" description="PLG_SNOWFALLING_STARTDAY_DESC">
 					<option value="01">01</option>
 					<option value="02">02</option>
 					<option value="03">03</option>
@@ -86,7 +86,7 @@
 
 				<field name="basic_hidden1" type="hidden" default="" />
 
-				<field name="endmonth" type="list" default="1" label="PLG_CONTENT_SNOWFALLING_ENDMONTH" description="PLG_CONTENT_SNOWFALLING_ENDMONTH_DESC">
+				<field name="endmonth" type="list" default="1" label="PLG_SNOWFALLING_ENDMONTH" description="PLG_SNOWFALLING_ENDMONTH_DESC">
 					<option value="01">JANUARY</option>
 					<option value="02">FEBRUARY</option>
 					<option value="03">MARCH</option>
@@ -101,7 +101,7 @@
 					<option value="12">DECEMBER</option>
 				</field>
 				
-				<field name="endday" type="list" default="6" label="PLG_CONTENT_SNOWFALLING_ENDDAY" description="PLG_CONTENT_SNOWFALLING_ENDDAY_DESC">
+				<field name="endday" type="list" default="6" label="PLG_SNOWFALLING_ENDDAY" description="PLG_SNOWFALLING_ENDDAY_DESC">
 					<option value="01">01</option>
 					<option value="02">02</option>
 					<option value="03">03</option>
@@ -138,28 +138,28 @@
 				<field name="basic_hidden2" type="hidden" default="" />
 			</fieldset>
 
-			<fieldset name="extradata" label="PLG_CONTENT_SNOWFALLING_EXTRADATA_LABEL">
-				<field name="snowtextimage" type="list" default="1" label="PLG_CONTENT_SNOWFALLING_TEXTIMAGE" description="PLG_CONTENT_SNOWFALLING_TEXTIMAGE_DESC">
-					<option value="1">PLG_CONTENT_SNOWFALLING_TEXTIMAGE_TEXT</option>
-					<option value="2">PLG_CONTENT_SNOWFALLING_TEXTIMAGE_IMAGE</option>
+			<fieldset name="extradata" label="PLG_SNOWFALLING_EXTRADATA_LABEL">
+				<field name="snowtextimage" type="list" default="1" label="PLG_SNOWFALLING_TEXTIMAGE" description="PLG_SNOWFALLING_TEXTIMAGE_DESC">
+					<option value="1">PLG_SNOWFALLING_TEXTIMAGE_TEXT</option>
+					<option value="2">PLG_SNOWFALLING_TEXTIMAGE_IMAGE</option>
 				</field>
-				<field name="snowletter" type="text" default="*" size="1" label="PLG_CONTENT_SNOWFALLING_LETTER" description="PLG_CONTENT_SNOWFALLING_LETTER_DESC" />
-				<field name="snowimage" type="media" default="" label="PLG_CONTENT_SNOWFALLING_IMAGE" description="PLG_CONTENT_SNOWFALLING_IMAGE_DESC" />
-				<field name="snowtype" type="text" default="" size="10" label="PLG_CONTENT_SNOWFALLING_FONT" description="PLG_CONTENT_SNOWFALLING_FONT_DESC" />
-				<field name="snowcolor" type="text" default="" size="10" label="PLG_CONTENT_SNOWFALLING_COLOR" description="PLG_CONTENT_SNOWFALLING_COLOR_DESC" />
-				<field name="snowmax" type="integer" first="0" last="40" default="30" size="10" step="1" label="PLG_CONTENT_SNOWFALLING_FLAKECOUNT" description="PLG_CONTENT_SNOWFALLING_FLAKECOUNT_DESC" />
-				<field name="sinkspeed" type="integer" first="3" last="20" default="6" size="10" step="1" label="PLG_CONTENT_SNOWFALLING_SINKSPEED" description="PLG_CONTENT_SNOWFALLING_SINKSPEED_DESC" />
+				<field name="snowletter" type="text" default="*" size="1" label="PLG_SNOWFALLING_LETTER" description="PLG_SNOWFALLING_LETTER_DESC" />
+				<field name="snowimage" type="media" default="" label="PLG_SNOWFALLING_IMAGE" description="PLG_SNOWFALLING_IMAGE_DESC" />
+				<field name="snowtype" type="text" default="" size="10" label="PLG_SNOWFALLING_FONT" description="PLG_SNOWFALLING_FONT_DESC" />
+				<field name="snowcolor" type="text" default="" size="10" label="PLG_SNOWFALLING_COLOR" description="PLG_SNOWFALLING_COLOR_DESC" />
+				<field name="snowmax" type="integer" first="0" last="40" default="30" size="10" step="1" label="PLG_SNOWFALLING_FLAKECOUNT" description="PLG_SNOWFALLING_FLAKECOUNT_DESC" />
+				<field name="sinkspeed" type="integer" first="3" last="20" default="6" size="10" step="1" label="PLG_SNOWFALLING_SINKSPEED" description="PLG_SNOWFALLING_SINKSPEED_DESC" />
 				<field name="extradata_hidden1" type="hidden" default="" />
-				<field name="snowminsize" type="text" default="8" size="10" label="PLG_CONTENT_SNOWFALLING_SNOWMINSIZE" description="PLG_CONTENT_SNOWFALLING_SNOWMINSIZE_DESC" />
-				<field name="snowmaxsize" type="text" default="22" size="10" label="PLG_CONTENT_SNOWFALLING_SNOWMAXSIZE" description="PLG_CONTENT_SNOWFALLING_SNOWMAXSIZE_DESC" />
+				<field name="snowminsize" type="text" default="8" size="10" label="PLG_SNOWFALLING_SNOWMINSIZE" description="PLG_SNOWFALLING_SNOWMINSIZE_DESC" />
+				<field name="snowmaxsize" type="text" default="22" size="10" label="PLG_SNOWFALLING_SNOWMAXSIZE" description="PLG_SNOWFALLING_SNOWMAXSIZE_DESC" />
 				<field name="extradata_hidden2" type="hidden" default="" />
-				<field name="snowingzone" type="list" default="1" label="PLG_CONTENT_SNOWFALLING_SNOWINGZONE" description="PLG_CONTENT_SNOWFALLING_SNOWINGZONE_DESC">
-					<option value="1">PLG_CONTENT_SNOWFALLING_SNOWINGZONE_ALL</option>
-					<option value="2">PLG_CONTENT_SNOWFALLING_SNOWINGZONE_LEFT</option>
-					<option value="3">PLG_CONTENT_SNOWFALLING_SNOWINGZONE_CENTER</option>
-					<option value="4">PLG_CONTENT_SNOWFALLING_SNOWINGZONE_RIGHT</option>
+				<field name="snowingzone" type="list" default="1" label="PLG_SNOWFALLING_SNOWINGZONE" description="PLG_SNOWFALLING_SNOWINGZONE_DESC">
+					<option value="1">PLG_SNOWFALLING_SNOWINGZONE_ALL</option>
+					<option value="2">PLG_SNOWFALLING_SNOWINGZONE_LEFT</option>
+					<option value="3">PLG_SNOWFALLING_SNOWINGZONE_CENTER</option>
+					<option value="4">PLG_SNOWFALLING_SNOWINGZONE_RIGHT</option>
 				</field>
-				<field name="snowaddid" type="text" default="" size="10" label="PLG_CONTENT_SNOWFALLING_SNOWADDID" description="PLG_CONTENT_SNOWFALLING_SNOWADDID_DESC" />
+				<field name="snowaddid" type="text" default="" size="10" label="PLG_SNOWFALLING_SNOWADDID" description="PLG_SNOWFALLING_SNOWADDID_DESC" />
 				<field name="extradata_hidden3" type="hidden" default="" />
 			</fieldset>
 
