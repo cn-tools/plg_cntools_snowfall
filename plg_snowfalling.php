@@ -23,9 +23,9 @@
  */
 defined('_JEXEC') or die('Restricted access');
 
-class plgSystemSnowFalling extends JPlugin
+class plgSystemPlg_SnowFalling extends JPlugin
 {
-	function plgSystemSnowFalling(&$subject, $config)
+	function plgSystemPlg_SnowFalling(&$subject, $config)
 	{
 		parent::__construct($subject, $config);
 	}
@@ -75,7 +75,7 @@ class plgSystemSnowFalling extends JPlugin
 			$pos = strrpos($buffer, "</head>");
 			if($pos > 0)
 			{
-				$buffer = substr($buffer, 0, $pos).'<script src="'.JURI::base().'plugins/system/snowfalling/snow.js" type="text/javascript"></script>'.'<script type="text/javascript">'.$script.'</script>'.substr($buffer, $pos);
+				$buffer = substr($buffer, 0, $pos).'<script src="'.JURI::base().'plugins/system/plg_snowfalling/snow.js" type="text/javascript"></script>'.'<script type="text/javascript">'.$script.'</script>'.substr($buffer, $pos);
 			}		
 			
 			JResponse::setBody($buffer);
