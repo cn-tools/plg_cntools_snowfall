@@ -10,7 +10,7 @@
 	<version>0.0.2</version>
 	<description>PLG_SNOWFALLING_BASE_DESC</description>
 	<files>
-		<filename plugin="plg_snowfalling">snowfalling.php</filename>
+		<filename plugin="plg_snowfalling">plg_snowfalling.php</filename>
 		<filename plugin="plg_snowfalling">snow.js</filename>
 		<filename>index.html</filename>
 	</files>
