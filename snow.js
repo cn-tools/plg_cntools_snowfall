@@ -39,7 +39,7 @@ function initsnow() {
 		snow[i]=document.getElementById("s"+i+snowaddid);
 		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)];
 		snow[i].size=randommaker(snowsizerange)+snowminsize;
-		snow[i].style.fontSize=snow[i].size;
+		snow[i].style.fontSize=snow[i].size+"px";
 		snow[i].style.color=snowcolor[randommaker(snowcolor.length)];
 		snow[i].sink=sinkspeed*snow[i].size/5;
 		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size);}
