@@ -5,7 +5,7 @@
  * @author      Clemens Neubauer {@link cn-tools@gmx.at#}
  * @version     0-0-1
  * @date        Created on 13-Feb-2014
- * @link        Project Site {@link https://github.com/cn-tools/plg_snowfall}
+ * @link        Project Site {@link https://github.com/cn-tools/plg_cntools_snowfall}
  *
  * @license GNU/GPL
  * This program is free software: you can redistribute it and/or modify
@@ -23,9 +23,9 @@
  */
 defined('_JEXEC') or die('Restricted access');
 
-class plgSystemPlg_SnowFalling extends JPlugin
+class plgSystemPlg_CNTools_SnowFalling extends JPlugin
 {
-	function plgSystemPlg_SnowFalling(&$subject, $config)
+	function plgSystemPlg_CNTools_SnowFalling(&$subject, $config)
 	{
 		parent::__construct($subject, $config);
 	}
@@ -75,7 +75,7 @@ class plgSystemPlg_SnowFalling extends JPlugin
 			$pos = strrpos($buffer, "</head>");
 			if($pos > 0)
 			{
-				$buffer = substr($buffer, 0, $pos).'<script src="'.JURI::base().'plugins/system/plg_snowfalling/snow.js" type="text/javascript"></script>'.'<script type="text/javascript">'.$script.'</script>'.substr($buffer, $pos);
+				$buffer = substr($buffer, 0, $pos).'<script src="'.JURI::base().'plugins/system/plg_cntools_snowfalling/snow.js" type="text/javascript"></script>'.'<script type="text/javascript">'.$script.'</script>'.substr($buffer, $pos);
 			}		
 			
 			JResponse::setBody($buffer);
