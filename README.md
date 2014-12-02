@@ -3,7 +3,10 @@ plg_snowfall
 
 This Joomla! v3 Plug-In integrate a snow falling down effect into your website.
 
-There are many config variants available. So you can find the perfect 'design' for your site. Also this plug-in is actually in two languages available and a few more are in progress.
+There are many config variants available. So you can find the perfect 'design' for your site. Also this plug-in is actually in three languages available:
+* en-EN
+* de-DE
+* hr-HR
 
 Because this plug in is FREEWARE and AS-IT-IS, you can test them and if you like it please give me review and perhaps you will donate me a drink ... ;-P
 
