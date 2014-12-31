@@ -75,7 +75,7 @@ class plgSystemPlg_CNTools_SnowFalling extends JPlugin
 			$pos = strrpos($buffer, "</head>");
 			if($pos > 0)
 			{
-				$buffer = substr($buffer, 0, $pos).'<script src="'.JURI::base().'plugins/system/plg_cntools_snowfalling/snow.js" type="text/javascript"></script>'.'<script type="text/javascript">'.$script.'</script>'.substr($buffer, $pos);
+				$buffer = substr($buffer, 0, $pos).'<script src="'.JURI::base().'plugins' . DIRECTORY_SEPARATOR . 'system' . DIRECTORY_SEPARATOR . 'plg_cntools_snowfalling' . DIRECTORY_SEPARATOR . 'snow.js" type="text/javascript"></script>'.'<script type="text/javascript">'.$script.'</script>'.substr($buffer, $pos);
 			}		
 			
 			JResponse::setBody($buffer);
