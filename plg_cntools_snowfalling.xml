@@ -7,7 +7,7 @@
 	<authorUrl>https://github.com/cn-tools/</authorUrl>
 	<copyright>Copyright (c) 2013-2014 Clemens Neubauer. All Rights Reserved</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0</license>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<description>PLG_CNTOOLS_SNOWFALLING_BASE_DESC</description>
 	<files>
 		<filename plugin="plg_cntools_snowfalling">plg_cntools_snowfalling.php</filename>
@@ -16,7 +16,7 @@
 	</files>
 
 	<updateservers>
-		<server type="extension" priority="1" name="PLG_CNTOOLS_SNOWFALLING Updates">https://raw.github.com/cn-tools/plg_cntools_snowfall/master/updateversion.xml</server>
+		<server type="extension" priority="1" name="PLG_CNTOOLS_SNOWFALLING Updates">https://raw.githubusercontent.com/cn-tools/plg_cntools_snowfall/master/updateversion.xml</server>
 	</updateservers>
 
 	<languages>
