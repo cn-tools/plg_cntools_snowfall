@@ -7,7 +7,7 @@
 	<authorUrl>https://github.com/cn-tools/</authorUrl>
 	<copyright>Copyright (c) 2013-2014 Clemens Neubauer. All Rights Reserved</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0</license>
-	<version>0.0.4</version>
+	<version>0.0.5</version>
 	<description>PLG_CNTOOLS_SNOWFALLING_BASE_DESC</description>
 	<files>
 		<filename plugin="plg_cntools_snowfalling">plg_cntools_snowfalling.php</filename>
@@ -22,6 +22,8 @@
 	<languages>
 		<language tag="de-DE">languages/de-DE/de-DE.plg_system_plg_cntools_snowfalling.ini</language>
 		<language tag="de-DE">languages/de-DE/de-DE.plg_system_plg_cntools_snowfalling.sys.ini</language>
+		<language tag="de-AT">languages/de-At/de-AT.plg_system_plg_cntools_snowfalling.ini</language>
+		<language tag="de-AT">languages/de-At/de-AT.plg_system_plg_cntools_snowfalling.sys.ini</language>
 		<language tag="en-GB">languages/en-GB/en-GB.plg_system_plg_cntools_snowfalling.ini</language>
 		<language tag="en-GB">languages/en-GB/en-GB.plg_system_plg_cntools_snowfalling.sys.ini</language>
 		<language tag="hr-HR">languages/hr-HR/hr-HR.plg_system_plg_cntools_snowfalling.ini</language>
