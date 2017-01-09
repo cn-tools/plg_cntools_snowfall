@@ -25,7 +25,7 @@ defined('_JEXEC') or die('Restricted access');
 
 class plgSystemPlg_CNTools_SnowFalling extends JPlugin
 {
-	function plgSystemPlg_CNTools_SnowFalling(&$subject, $config)
+	public function __construct(&$subject, $config)
 	{
 		parent::__construct($subject, $config);
 	}
